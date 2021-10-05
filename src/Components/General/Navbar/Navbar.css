@@ -1,0 +1,95 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 4em;
+  width: 100vw;
+  border-bottom: 3px solid #efefef;
+  background-color: #292f45;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-logo {
+  margin-left: 1.5em;
+  color: #fff;
+}
+
+.logoImage {
+  height: 8em;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 2em;
+  list-style: none !important;
+}
+
+.nav-item {
+  padding: 0.5em;
+  margin: 0.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  color: #fff;
+  transition: all 0.2s ease-out;
+}
+
+.nav-links:hover {
+  color: #ea2329;
+}
+
+.main-nav-active {
+  color: #ea2329;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .menu-icon {
+    display: block;
+    margin-right: 1em;
+    font-size: 1.8em;
+    cursor: pointer;
+    z-index: 999;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .menu-icon .fas {
+    color: #fff;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #292f45;
+    left: 0;
+    z-index: 1;
+  }
+
+  .nav-item {
+    padding: 2em;
+    text-align: center;
+  }
+}

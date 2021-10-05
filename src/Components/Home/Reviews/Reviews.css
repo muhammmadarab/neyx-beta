@@ -1,0 +1,77 @@
+.reviews {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+      to right,
+      rgba(41, 47, 69, 0.9),
+      rgba(41, 47, 69, 0.9)
+    ),
+    url("https://www.esa.int/var/esa/storage/images/about_us/business_with_esa/19716975-3-eng-GB/Business_with_ESA_pillars.jpg");
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.reviews__image {
+  height: fit-content;
+  margin: 3em auto 1em;
+  color: #fff;
+  object-fit: contain;
+  text-align: center;
+}
+
+.reviews__image > h1 {
+  margin: 0 0.5em 1em;
+  padding-top: 2em;
+  font-size: 1.7em;
+}
+
+.reviews__image > h2 {
+  font-size: 1.6em;
+  margin: auto 0.5em;
+}
+
+.reviews__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reviews__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 23em;
+  width: 20em;
+  padding: 1.5em;
+  margin: 2em 1.5em;
+  background-color: white;
+  color: #252e39;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  box-shadow: rgba(41, 47, 69, 0.9) 0 3px 6em;
+  border-radius: 15px;
+}
+
+.reviews__card > div.title {
+  display: flex;
+}
+
+.reviews__card > div.title > .MuiSvgIcon-root {
+  color: rgb(234, 111, 102);
+  font-size: 2.2em;
+}
+
+.reviews__card > p {
+  font-size: 1.1em;
+  margin: 2em 0.5em 1em;
+}
+
+.card__footer {
+  margin-top: 1em;
+}
+
+@media (max-width:375px){
+  .reviews__card {
+    width: 90vw;
+    margin: 2em 0;
+  }
+}

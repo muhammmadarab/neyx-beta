@@ -1,0 +1,58 @@
+.faq__container {
+  background-color: #eaeef9;
+  font-family: "Raleway", sans-serif;
+  color: #252e39;
+}
+
+.faq__heading {
+  padding: 1em 0 0;
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.faqs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: auto;
+}
+
+.faq {
+  height: fit-content;
+  width: 25em;
+  padding: 1em;
+  margin: 1em;
+}
+
+.faq__title {
+  font-size: 1.4em;
+  margin-bottom: 0.7em;
+}
+
+.faq__desc {
+  font-size: 1.2em;
+}
+
+.hidden {
+  display: none;
+}
+
+.readMore {
+  position: relative;
+  max-width: 960px;
+  padding: 1em 0;
+  margin: auto;
+}
+
+.readMore__button {
+  position: absolute;
+  right: 5em;
+  bottom: 1em;
+  border: none;
+  background-color: transparent;
+  color: #252e39;
+  font-weight: 600;
+  cursor: pointer;
+} 

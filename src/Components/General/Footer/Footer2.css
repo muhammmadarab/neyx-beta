@@ -1,0 +1,22 @@
+.footer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  background-color: #252e39;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+}
+
+.footer2 > p {
+  margin-left: 0.5em;
+}
+
+.footer2 > p > a {
+  color: #efefef;
+}
+
+.footer2 > p > a:hover {
+  opacity: 0.8;
+}

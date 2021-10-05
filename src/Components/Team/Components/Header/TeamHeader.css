@@ -1,0 +1,114 @@
+.team__banner {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding-top: 4em;
+}
+
+.banner__left {
+  display: flex;
+}
+
+.banner__left > img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.banner__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #252e39;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  padding: 2em 0.5em 1em;
+}
+
+.banner__right h1 {
+  padding: 0.3em 0.5em 0.1em;
+  text-align: center;
+}
+
+.banner__right p {
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+
+@media (min-width: 720px) {
+  .banner__left,
+  .banner__right {
+    width: 50%;
+  }
+  .banner__right h1 {
+    font-size: 2.2em;
+  }
+
+  .banner__right p {
+    font-size: 1.7em;
+  }
+}
+
+/* footer css */
+#teamFooter {
+  flex-direction: column-reverse;
+  border-radius: 0.8em;
+  background-color: #fff;
+  padding-top: 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 1.5em;
+}
+
+#teamFooter .banner__right {
+  background-color: #fff;
+  color: #252e39;
+  justify-content: center;
+  height: fit-content;
+  border-radius: 0.8em;
+  align-self: center;
+}
+
+@media (min-width: 720px) {
+  #teamFooter {
+    max-width: 1020px;
+    margin: auto;
+  }
+  #teamFooter .banner__left,
+  #teamFooter .banner__right {
+    width: 100%;
+    text-align: center;
+  }
+  #teamFooter .banner__left img {
+    max-width: unset;
+    width: 100%;
+    padding-top: 0.5em;
+    border-radius: 0 0 0.8em 0.8em;
+    position: relative;
+    top: 0.3em;
+  }
+}
+
+@media (min-width: 1000px) {
+  #teamFooter {
+    flex-direction: row-reverse;
+    max-width: unset;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  #teamFooter .banner__left {
+    width: 60%;
+  }
+  #teamFooter .banner__left img {
+    max-width: 100%;
+    height: 30em;
+    width: 90%;
+    padding-top: 0;
+    border-radius: 0;
+    position: relative;
+    top: 0;
+  }
+  #teamFooter .banner__right {
+    height: fit-content;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 1.5em;
+    border-radius: 0.8em;
+    transform: translateX(10%);
+  }
+}
