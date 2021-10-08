@@ -51,11 +51,11 @@
   border-radius: 15px;
 }
 
-.reviews__card > div.title {
+.reviews__card > div.review_title {
   display: flex;
 }
 
-.reviews__card > div.title > .MuiSvgIcon-root {
+.reviews__card > div.review_title > .MuiSvgIcon-root {
   color: rgb(234, 111, 102);
   font-size: 2.2em;
 }

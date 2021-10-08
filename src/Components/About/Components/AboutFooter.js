@@ -6,12 +6,11 @@ function AboutFooters() {
   return (
     <AboutFooter>
       <div>
-        <h1>Hire bargainator and start growing with ease!</h1>
+        <h1>Hire NeyX and start growing with ease!</h1>
         <h5>
           The intelligent sales assistant chatbot of the future. Using state of
-          the art AI technology, Bargainator will begin generating extra revenue
-          in minutes. Simply enable our pre-built interaction tools and campaign
-          template and away you go!
+          the art AI technology, NeyX will begin generating extra revenue
+          in minutes.
         </h5>
         <Link to="/contact">Get in touch</Link>
       </div>

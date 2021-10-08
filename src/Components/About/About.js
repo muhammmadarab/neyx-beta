@@ -12,15 +12,13 @@ function About() {
     <AboutContainer>
       <Title
         title="About Us"
-        desc="Bargainator offers a whole new shopping experience for your customers'
-      while giving you the tools needed to grow your business. Hire Bagainator
-      and let him do the work for you!"
+        desc="NeyX will simplify the pricing system and help you grow your business. Let the magic begin for you!"
       />
       <Features />
       <AboutFeature
         classes="tools"
-        heading="Tools for Growth"
-        desc="Bargainator offers shoppers a one-of-the-kind customer experience. For merchants, it's all about the tools to grow your business!"
+        heading="ESCALATE TO EXTREME NEYX"
+        desc="We work for both buyer and seller. The emptor gets a fulfilling customer experience while for the merchant it's all about how to escalate your business to heights"
         img="https://www.orangescrum.com/blog/wp-content/uploads/2019/02/What-Managers-searching-from-Project-Management-Tools.png"
         alt="Men having idea"
       />

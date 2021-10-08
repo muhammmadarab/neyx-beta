@@ -23,9 +23,9 @@ function FormCompo(props) {
         </LogoContainer>
         <Form>
           <Input name="name" label="Name" type="text" />
-          <Input name="url" label="Company URL" type="text" />
-          <Input name="email" label="Email Address" type="email" />
-          <Input name="number" label="Number" type="number" />
+          <Input name="url" label="Company Website" type="text" />
+          <Input name="email" label="Work Email" type="email" />
+          <Input name="number" label="Contact Number" type="number" />
           <Button className="betaSignUpBtn">Join Beta</Button>
           <Button
             className="betaSignUpBtn betaSignUpBtn--close"

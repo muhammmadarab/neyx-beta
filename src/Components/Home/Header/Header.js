@@ -20,10 +20,7 @@ function Header() {
             />
           </span>
         </h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
-          architecto.
-        </p>
+        <p>Boost in sales &amp; Happy customer is our responsibility</p>
         <div className="hero__button">
           <Link to="/joinbeta" className="hero__joinUs">
             Join Beta
@@ -34,7 +31,10 @@ function Header() {
         </div>
       </div>
       <div className="hero__image">
-        <img src="https://exeleonmagazine.com/wp-content/uploads/2020/02/isometric-business-people-meeting_23-2148289514.jpg" alt="business meeting"/>
+        <img
+          src="https://exeleonmagazine.com/wp-content/uploads/2020/02/isometric-business-people-meeting_23-2148289514.jpg"
+          alt="business meeting"
+        />
       </div>
     </div>
   );

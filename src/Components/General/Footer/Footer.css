@@ -20,6 +20,7 @@ footer {
   width: fit-content;
   padding: 1em 1em;
   margin: 0 1em;
+  
 }
 
 .part__title {
@@ -44,6 +45,7 @@ footer {
 .footer__link:hover {
   color: #ea2329 !important;
   transform: scale(1.1);
+  transition: all 0.7s ease;
 }
 
 .subscribeUs__form {
@@ -79,6 +81,7 @@ footer {
   font-size: 1em;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .subscribeUs__submit:hover {

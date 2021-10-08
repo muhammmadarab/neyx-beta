@@ -5,44 +5,36 @@ function Features() {
   return (
     <div>
       <AboutFeature
-        title="Greetings &amp; Announcements"
-        heading="Who said shopping online had to be lonely?"
-        desc={[
-          `Making customers feel welcome as soon as they arrive at your store
-            is a great way to start their experience. Bargainator will greet
-            every customer onto your site just as they would in store!`,
-          <br />,
-          `Once you have shoppers attention, make sure they know of any ongoing
-            promotions, keep them in the loop with the latest brand news, or
-            invite them to read your blog.`,
-        ]}
-        footer="Engaging with customers early on their arrival will help reduce
-            bounce rates and increase life-time value."
+        title="NOD &amp; WAVE"
+        heading="You need attention! What are you waiting for?"
+        desc="We have a solution for you, which will amaze the customer and will give the feel of warmth to the shopper."
+        footer="Your attention is our goal to increase and provide a better analysis of sales."
         img="https://www.shift4shop.com/2015/images/shopping-cart-software/why-shopping-cart.png"
         alt="shopping cart"
       />
       <AboutFeature
-        title="Bargain for discount"
-        heading="Bargainator is the world's first negotiation chatbot made for eCommerce."
-        desc={`This unique feature brings offering discounts to a whole new level of engagement. Instead of offering discounts for no reason let your customers "work" for them. Bargainator is the world's first negotiation chatbot made for eCommerce`}
+        title="NEGOTIATE YOUR PRICE"
+        heading="NeyX is the world’s first smart negotiation chatbot with a variety of features just for eCommerce."
+        desc="Buy a product, without a bargain…. Not Anymore! We are offering the best discount on the basis of capability of the customer and taking it to a whole new level which brings in profit for everyone. We are here for you, by you."
         img="https://getbargainator.com/img/features/BG-FP-IMG4.png"
         alt="girl using phone"
       />
       <AboutFeature
-        title="Convert"
+        title="CONVERSION CAPACITY"
         heading={[
-          "Once Bargainator engage with your shopper in a negotiation chat, he has reached an amazing ",
-          <span>conversion level of up to 8.75% </span>,
-          "on customers stores just like yours.",
+          `This NeyX bot has successfully managed to reach perfect`,
+          <span>conversion level up to ______</span>,
+          `on various other ecommerce stores.`,
         ]}
         img="https://previews.123rf.com/images/yupiramos/yupiramos1903/yupiramos190318552/124265895-webpage-template-with-ecommerce-icons-vector-illustration-design.jpg"
         alt="shopping website"
         hOneClass="black"
       />
+
       <AboutFeature
-        title="Not? Retargated"
-        heading="From the moment a visitor arrives at your store, Bargainator only goal is to make sales for you..."
-        desc="and he never quits! if he doesn't succeed the first-time around, Bargainator will retarget shoppers using an automated sequence to convert lost sales."
+        title="DON’T STEP BACK!"
+        heading="We don’t believe in stopping setbacks, we get ready for a comeback."
+        desc="As time just moves forward, we keep moving forward using gradient descent which will optimize the sales at every neyx step providing the best price."
         img="https://getbargainator.com/img/features/BARGAINATOR-MADE-DEAL.png"
         alt="product page"
       />

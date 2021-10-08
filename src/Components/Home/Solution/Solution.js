@@ -20,64 +20,66 @@ function Solution() {
         <div className="solution__card">
           <div>
             <CheckIcon />
-            <h3>We are introducing NeyX</h3>
+            <h3>Introducing NeyX</h3>
           </div>
           <p>
-            One bot to solve all of thes It is going to revolutionize online
-            shopping experience and make it even more affordable and fun
+            One bot to solve all of thes It is going to revolutionize the online
+            shopping experience and make it even more affordable and fun for the
+            customers.
           </p>
         </div>
         <div className="solution__card">
           <div>
             <ChatOutlinedIcon />
-            <h3>NeyX, bargain master</h3>
+            <h3>Bargain master</h3>
           </div>
           <p>
-            A smart bot, can negotiate. Bargain with the customer to satisfy
-            both buyer and seller A smart bot, can negotiate. Bargain with the
-            customer to satisfy both buyer and seller
+            A smart bot with strong negotiating will power, which is beneficial
+            to buyer, seller and ecommerce site. This bargain helps to please
+            the customer, that they are getting the best price and the buyer
+            that they are getting more profit.
           </p>
         </div>
         <div className="solution__card">
           <div>
             <GetAppIcon />
-            <h3>NeyX, Easy Installation</h3>
+            <h3>Ease in Installation</h3>
           </div>
           <p>
-            It can be easily installed in every e-commerce websites, apps and
-            let your customer bargain with you and reduce a huge load of human
-            resource.
+            Its installation is a piece of cake for any ecommerce to accommodate
+            it as their perfect sales partner. It won’t increase any maintenance
+            workload, that’s our responsibility.
           </p>
         </div>
         <div className="solution__card">
           <div>
             <LaptopMacOutlinedIcon />
-            <h3>NeyX, safe and fun</h3>
+            <h3>Out of harm’s way (replaces safe and fun)</h3>
           </div>
           <p>
-            It will provide customised price tag for each individual customer
-            according to their preference and respects every user’s privacy.
+            It respects the privacy of its customers and users by using the best
+            security available in the market
           </p>
         </div>
         <div className="solution__card">
           <div>
             <WebAssetOutlinedIcon />
-            <h3>NeyX, new era of shopping</h3>
+            <h3>New era of shopping</h3>
           </div>
           <p>
-            It is going to revolutionize online shopping experience and make it
-            even more affordable and fun, say goodbye to old boring fixed price
-            system.
+            It’s the future of online shopping, a new direction to the whole
+            pricing system. Say goodbye to the old and boring fixed price tags.
           </p>
         </div>
         <div className="solution__card">
           <div>
             <LibraryAddCheckOutlinedIcon />
-            <h3>NeyX, bargain master</h3>
+            <h3>Jollify Shopping</h3>
           </div>
           <p>
-            A smart bot, can negotiate. Bargain with the customer to satisfy
-            both buyer and seller A smart bot, can negotiate.
+            It helps the customer to communicate their desired price to the
+            buyer. Chit-Chat as much you would like to, in the direction to
+            bargain for the best price.
           </p>
         </div>
       </div>

@@ -11,7 +11,7 @@ function Reviews() {
       </div>
       <div className="reviews__cards">
         <div className="reviews__card">
-          <div className="title">
+          <div className="review_title">
             <CheckCircleOutlinedIcon />
             <h2>Organized and Efficient</h2>
           </div>
@@ -25,7 +25,7 @@ function Reviews() {
           </div>
         </div>
         <div className="reviews__card">
-          <div className="title">
+          <div className="review_title">
             <CheckCircleOutlinedIcon />
             <h2>Organized and Efficient</h2>
           </div>
@@ -39,7 +39,7 @@ function Reviews() {
           </div>
         </div>
         <div className="reviews__card">
-          <div className="title">
+          <div className="review_title">
             <CheckCircleOutlinedIcon />
             <h2>Organized and Efficient</h2>
           </div>

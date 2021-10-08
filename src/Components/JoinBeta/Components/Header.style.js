@@ -13,9 +13,7 @@ export const Header = styled.div`
   height: 110vh;
   width: 100vw;
   margin: auto;
-  background: rgb(158, 23, 221)
-    url(${HeaderImage})
-    0 -1em / cover no-repeat;
+  background: url(${HeaderImage}) -1em / cover no-repeat;
 
   ${media.desktop} {
     height: 110vh;
@@ -77,6 +75,7 @@ export const HeaderContent = styled.div`
     margin: 5em 0.7em;
     font-weight: 600;
     letter-spacing: 1px;
+    transition: all 0.5s ease;
 
     ${media.mobile} {
       width: 18em;
@@ -112,7 +111,6 @@ export const HeaderContent = styled.div`
     }
   }
 `;
-
 
 export const FormContainer = styled.div`
   display: none;

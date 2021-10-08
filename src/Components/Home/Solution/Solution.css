@@ -16,7 +16,7 @@
 .solution__heading {
   display: flex;
   justify-content: space-around;
-  max-width: 450px;
+  max-width: 280px;
   margin: 1.2em auto;
   font-weight: 600;
 }
@@ -38,15 +38,23 @@
 .solution__card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 15em;
+  align-items: flex-start;
+  justify-content: center;
+  height: 18em;
   max-width: 300px;
   width: 22em;
   padding: 1.5em;
   margin: 1em;
   box-shadow: rgba(215, 215, 215, 0.8) 0px 3px 6em;
   border-radius: 15px;
+}
+
+.solution__card:not(:nth-child(2)){
+  justify-content: space-evenly;
+}
+
+.solution__card:not(:nth-child(2)) p{
+  margin-bottom: 3em;
 }
 
 .solution__card > div {

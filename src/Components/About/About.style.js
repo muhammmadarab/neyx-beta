@@ -23,6 +23,7 @@ export const Feature = styled.div`
     height: max-content;
     max-width: unset;
     width: 100vw;
+    margin-top: 5em;
     background-color: #292f45;
 
     h1 {
@@ -214,6 +215,7 @@ export const AboutFooter = styled.div`
       font-weight: 600;
       letter-spacing: 1px;
       text-align: center;
+      transition: all 0.5s ease;
 
       ${media.mobile} {
         width: 18em;

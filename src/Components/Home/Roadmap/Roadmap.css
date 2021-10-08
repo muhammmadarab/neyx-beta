@@ -1,20 +1,28 @@
 .roadmap {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
+  color: #292f45;
+  text-align: center;
 }
 
-.roadmap__title{
-    padding: 1.5em 0 0;
-    color: #292f45;
-    text-align: center;
+.roadmap__title {
+  padding: 1em 0 0;
+  color: #292f45;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.roadmap__title + h3 {
+  padding: 0.5em 0;
+  font-size: 1.8em;
 }
 
 .roadmap__title span {
-    color: #ea2329;
+  color: #ea2329;
 }
 
 .roadmap__img {
-    max-width: 100%;
-    padding: 2em 0;
-    margin: auto;
+  max-width: 100%;
+  padding: 2em 0;
+  margin: auto;
 }

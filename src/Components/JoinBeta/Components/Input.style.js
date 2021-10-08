@@ -1,4 +1,7 @@
 import styled from "styled-components";
+const media = {
+  desktop: "@media(min-width: 530px)",
+};
 
 export const Input = styled.input`
   display: block;
@@ -9,6 +12,11 @@ export const Input = styled.input`
   letter-spacing: 2px;
   font-weight: bold;
   font-size: 1em;
+  font-family: "Times New Roman", Times, serif;
+
+  ${media.desktop} {
+    width: 15em;
+  }
 
   :focus {
     outline: none;

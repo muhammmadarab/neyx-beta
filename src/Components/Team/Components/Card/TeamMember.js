@@ -1,37 +1,16 @@
 import React, { useEffect, useState } from "react";
-import "./Card.css";
-import Card from "./MemberCard";
+import "./AniCard.css";
+import Card from "./Card";
+import CircularProgress from "@mui/material/CircularProgress/CircularProgress";
+import Box from "@mui/material/Box/Box";
 
 function TeamMember() {
   const [members, setMembers] = useState([]);
 
-  async function fetchData() {
-    const url = "https://neyx-server.herokuapp.com/team";
-
-    console.log("Fetching...");
-
-    let response = await fetch(url, {
-      headers: { "Content-Type": "application/json" },
-    });
-
-    if (response.ok) {
-      let json = await response.json();
-      let team = json["team"];
-      let photo = team[0]["photo"];
-      let FirstRemoved = photo.slice(1);
-      let SecondRemoved = FirstRemoved.slice(1);
-      let LastRemoved = SecondRemoved.slice(0, SecondRemoved.length - 1);
-      // let binary = atob(LastRemoved);
-      var img = document.createElement("img");
-      img.src = "data:image/jpeg;base64," + LastRemoved;
-      document.body.appendChild(img);
-    } else {
-      alert("HTTP-Error: " + response.status);
-    }
-  }
-
   useEffect(() => {
-    fetch("http://neyx-server.herokuapp.com/team")
+    const url = "http://neyx-server.herokuapp.com/team";
+
+    fetch(url)
       .then((res) => res.json())
       .then((data) => {
         setMembers(data.team);
@@ -43,10 +22,26 @@ function TeamMember() {
 
   console.log(members);
 
-  return (
+  return !members.length ? (
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+        width: "100vw",
+        position: "fixed",
+        top: "0",
+        background: "#fff",
+        zIndex: "1",
+      }}
+    >
+      <CircularProgress />
+    </Box>
+  ) : (
     <div className="card__container">
       {members.map((member) => (
-        <Card member={member} />
+        <Card member={member} key={member.id} />
       ))}
     </div>
   );
