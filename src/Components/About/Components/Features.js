@@ -4,7 +4,7 @@ import img1 from "../../../img/About1.jpg";
 import img2 from "../../../img/About2.jpg";
 import img3 from "../../../img/About3.jpg";
 import img4 from "../../../img/About4.jpg";
-import img5 from "../../../img/About5.jpg";
+// import img5 from "../../../img/About5.jpg";
 
 function Features() {
   return (
