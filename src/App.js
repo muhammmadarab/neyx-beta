@@ -10,6 +10,7 @@ import About from "./Components/About/About";
 import Beta from "./Components/JoinBeta/Beta";
 import Team from "./Components/Team/Team";
 import Contact from "./Components/Contact/Contact";
+import TermsAndCondition from "./Components/TermsAndCondition/TermsAndCondition";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         <ScrollToTop />
         <Navbar />
         <Switch>
+          <Route path="/tNc">
+            <TermsAndCondition />
+          </Route>
           <Route path="/contact">
             <Contact />
           </Route>
@@ -30,7 +34,7 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/">
+          <Route path="/" exact>
             <Home />
           </Route>
         </Switch>

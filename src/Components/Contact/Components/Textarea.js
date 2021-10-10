@@ -10,6 +10,7 @@ function TextareaComponent(props) {
         name={props.name}
         value={props.value}
         rows={props.rows}
+        required
       />
       <Label for={props.for}>{props.label}</Label>
     </InputsContainer>

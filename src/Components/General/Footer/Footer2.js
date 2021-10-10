@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer2.css";
 import CopyrightOutlinedIcon from "@material-ui/icons/CopyrightOutlined";
 
@@ -8,10 +9,12 @@ function Footer() {
       <CopyrightOutlinedIcon />
       <p>
         Copyright 2021, <strong>Neyx</strong> |{" "}
-        <a href="/">Terms &amp; Condition</a>
+        <Link to="/tNc" target="_blank">
+          Terms &amp; Condition
+        </Link>
       </p>
     </div>
   );
-};
+}
 
 export default Footer;

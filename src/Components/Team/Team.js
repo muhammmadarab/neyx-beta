@@ -9,9 +9,7 @@ function Team() {
       <Header
         image="https://moving2canada.com/wp-content/uploads/2019/12/HR_social.jpg"
         title="Our Mission"
-        desc="As an ROI-focused inbound marketing agency, we help businesses grow
-        through online education, training, collaboration, and execution. We
-        experience success through the success of our clients."
+        desc="“Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.”"
       />
       <Intro />
       <TeamMember />

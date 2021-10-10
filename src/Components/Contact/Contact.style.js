@@ -7,6 +7,27 @@ const media = {
   mobile: "@media(max-width:400px)",
 };
 
+export const DialogStyled = styled.div`
+  z-index: 100000;
+  .MuiDialogTitle-root {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: green;
+    font-size: 1.4em;
+    padding: 0.5em;
+
+    .MuiSvgIcon-root {
+      font-size: 1.3em;
+      margin-right: 0.3em;
+    }
+  }
+
+  .MuiTypography-root {
+    font-weight: 600;
+  }
+`;
+
 export const Container = styled.div`
   padding: 0 0 5em 0;
 
@@ -23,6 +44,9 @@ export const Container = styled.div`
     ${media.tablet} {
       flex-wrap: nowrap;
       height: 70vh;
+    }
+    ${media.mobile} {
+      width: 100%;
     }
   }
 `;
@@ -98,34 +122,37 @@ export const SocialLink = styled.a`
 `;
 
 export const ContainerRight = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1em;
-  width: 100%;
-
-  ${media.tablet} {
-    padding: 1em 2em;
-  }
-
-  > div:first-child {
+  form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
 
-  > div:nth-child(2) {
-    > div {
+    ${media.tablet} {
+      padding: 1em 2em;
+    }
+
+    > div:first-child {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
+    }
 
+    > div:nth-child(2) {
       > div {
-        flex-direction: row;
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
-        > label {
-          margin-left: 1em;
+        > div {
+          flex-direction: row;
+          align-items: center;
+
+          > label {
+            margin-left: 1em;
+          }
         }
       }
     }

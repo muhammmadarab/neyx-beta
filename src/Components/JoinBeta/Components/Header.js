@@ -1,10 +1,6 @@
 import { Button } from "@material-ui/core";
 import { React, useState } from "react";
-import {
-  Header,
-  HeaderContent,
-  FormContainer,
-} from "./Header.style";
+import { Header, HeaderContent, FormContainer } from "./Header.style";
 import Form from "./Form";
 
 function HeaderCompo() {
@@ -14,9 +10,9 @@ function HeaderCompo() {
       <HeaderContent>
         <h1>Success starts with a great product</h1>
         <p>
-          Morbi leo tortor, fermentum sed orci vitae, tempor auctor turpis.
-          Fusce bibendum accumsan fringilla. Nulla aliquam luctus sem, at
-          posuere nibh lobortis et.
+          Join the beta programme right now. It's exciting! Its free! Give us
+          your valuable feedback and get the best features beforehand. This is
+          what your customers have been waiting for.
         </p>
 
         <Button onClick={() => setButtonPopup(true)}>Sign me Up</Button>

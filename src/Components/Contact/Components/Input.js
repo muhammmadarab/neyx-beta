@@ -10,6 +10,7 @@ function InputCont(props) {
         name={props.name}
         value={props.value}
         id={props.for}
+        required
       />
       <Label for={props.for}>{props.label}</Label>
     </InputsContainer>

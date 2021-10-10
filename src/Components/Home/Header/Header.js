@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import HomeHeader from "../../../img/HomeHeader.jpg";
 import Typewriter from "typewriter-effect";
 
 function Header() {
@@ -23,6 +24,7 @@ function Header() {
         <p>Boost in sales &amp; Happy customer is our responsibility</p>
         <div className="hero__button">
           <Link to="/joinbeta" className="hero__joinUs">
+            <div class="blob white"></div>
             Join Beta
           </Link>
           <Link to="/about" className="hero__viewMore">
@@ -31,10 +33,7 @@ function Header() {
         </div>
       </div>
       <div className="hero__image">
-        <img
-          src="https://exeleonmagazine.com/wp-content/uploads/2020/02/isometric-business-people-meeting_23-2148289514.jpg"
-          alt="business meeting"
-        />
+        <img src={HomeHeader} alt="business meeting" />
       </div>
     </div>
   );

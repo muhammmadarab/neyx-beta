@@ -12,7 +12,11 @@ function About() {
     <AboutContainer>
       <Title
         title="About Us"
-        desc="NeyX will simplify the pricing system and help you grow your business. Let the magic begin for you!"
+        desc={[
+          "NeyX will simplify the pricing system and help you grow your business.",
+          <br />,
+          "Let the magic begin for you!",
+        ]}
       />
       <Features />
       <AboutFeature

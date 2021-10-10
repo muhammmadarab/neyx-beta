@@ -41,16 +41,6 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <NavLink
-              to="/joinbeta"
-              className="nav-links"
-              onClick={closeMobleMenu}
-              activeClassName="main-nav-active"
-            >
-              Join Beta
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
               to="/team"
               className="nav-links"
               onClick={closeMobleMenu}
@@ -67,6 +57,16 @@ function Navbar() {
               activeClassName="main-nav-active"
             >
               Contact
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/joinbeta"
+              className="nav-links"
+              onClick={closeMobleMenu}
+              activeClassName="main-nav-active"
+            >
+              Join <span className="betaHigh">Beta</span>
             </NavLink>
           </li>
         </ul>

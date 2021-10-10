@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import formBg from "../../../img/signUp.jpg"
+import formBg from "../../../img/signUpWI.jpg";
 
 const media = {
   desktop: "@media (max-width: 1024px)",
@@ -9,10 +9,11 @@ const media = {
 };
 
 export const Container = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 85vh;
   width: 80vw;
   margin-top: 2em;
   border-radius: 1em;
@@ -27,14 +28,15 @@ export const Container = styled.div`
     width: fit-content;
     flex-direction: column-reverse;
     height: fit-content;
+    top: 7em;
   }
 `;
 
 export const Form = styled.form`
   background-color: #fff;
-  padding: 2em;
-  margin: 0 2em auto;
-  width: fit-content;
+  /* padding: 2em; */
+  margin: auto;
+  /* width: fit-content; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,12 +84,12 @@ export const SubContainer = styled.div`
   :last-child {
     height: 100%;
     width: 60%;
-    background: url(${formBg}) 0 0/cover;
+    background: url(${formBg}) 0 0 / cover;
     color: #fff;
     border-radius: 0 1em 1em 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     padding: 2em;
 
     ${media.tablet} {
@@ -116,6 +118,11 @@ export const SubContainer = styled.div`
       p {
         max-width: 25em;
       }
+
+      h3 {
+        font-size: 1.2em;
+        margin-top: 5em;
+      }
     }
   }
 `;
@@ -139,6 +146,7 @@ export const LogoContainer = styled.div`
     height: 6em;
 
     ${media.mobile} {
+      display: none;
       position: absolute;
       top: 1.5em;
       right: 1em;

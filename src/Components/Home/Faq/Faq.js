@@ -45,7 +45,7 @@ function Faq() {
           className={readMore ? "readMore__button hidden" : "readMore__button"}
           onClick={() => setReadMore(true)}
         >
-          Read More...
+          See More <i className="fa fa-caret-down"></i>
         </button>
       </div>
       <div className={readMore ? "faqs" : "faqs hidden"}>
@@ -102,7 +102,7 @@ function Faq() {
           className={readMore ? "readMore__button" : "readMore__button hidden"}
           onClick={() => setReadMore(false)}
         >
-          Collapse
+          See Less <i className="fa fa-caret-up"></i>
         </button>
       </div>
     </div>

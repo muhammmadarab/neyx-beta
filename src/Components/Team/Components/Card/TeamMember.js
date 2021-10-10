@@ -8,6 +8,7 @@ function TeamMember() {
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
+    // document.body.style.overflow = !members.length ? "hidden" : "";
     const url = "http://neyx-server.herokuapp.com/team";
 
     fetch(url)

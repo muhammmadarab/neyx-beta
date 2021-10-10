@@ -9,13 +9,13 @@ export const Input = styled.input`
   border: 2px solid #5f5f5f;
   border-radius: 3px;
   margin: 0.3em auto 0.7em;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: bold;
   font-size: 1em;
   font-family: "Times New Roman", Times, serif;
 
   ${media.desktop} {
-    width: 15em;
+    width: 20em;
   }
 
   :focus {

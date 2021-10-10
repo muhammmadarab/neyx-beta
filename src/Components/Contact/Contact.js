@@ -1,20 +1,62 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import {
   Container,
   ContainerLeft,
   ContainerRight,
   Label,
   Button,
+  DialogStyled,
 } from "./Contact.style";
 import ContactLink from "./Components/ContactLink";
 import SocialLink from "./Components/SocialLink";
 import Input from "./Components/Input";
 import Textarea from "./Components/Textarea";
 import Title from "../General/TitleHeader/Title";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
 
 function Contact() {
+  const [open, setOpen] = useState(false);
+  const ContactForm = useRef(null);
+
+  const handleReset = () => {
+    Array.from(document.querySelectorAll("input")).forEach((input) => {
+      input.value = "";
+      input.checked = "";
+    });
+    document.querySelector("textarea").value = "";
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = new FormData(ContactForm.current);
+
+    fetch("https:/neyx-server.herokuapp.com/contact", {
+      method: "POST",
+      body: data,
+    }).then((res) => res.json());
+
+    setOpen(true);
+    setTimeout(() => {
+      setOpen(false);
+      handleReset();
+    }, 5000);
+  };
   return (
     <>
+      <Dialog fullScreen={false} open={open}>
+        <DialogStyled>
+          <DialogTitle>
+            <CheckCircleOutlineIcon /> Success
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText>We will get to you soon</DialogContentText>
+          </DialogContent>
+        </DialogStyled>
+      </Dialog>
       <Title title="Contact Us" />
       <Container>
         <div>
@@ -51,61 +93,76 @@ function Contact() {
             </div>
           </ContainerLeft>
           <ContainerRight>
-            <div>
-              <Input label="First Name" placeholder="Muhammad" type="text" />
-              <Input label="Last Name" placeholder="Arab" type="text" />
-              <Input
-                label="Email"
-                placeholder="hello@example.com"
-                type="email"
-              />
-              <Input
-                label="Phone"
-                placeholder="+91 98765 43210"
-                type="number"
-              />
-            </div>
-            <div>
-              <Label>Subject</Label>
+            <form id="from" ref={ContactForm} onSubmit={handleSubmit}>
               <div>
                 <Input
-                  label="Subject One"
-                  type="radio"
-                  name="subject"
-                  value="Option"
-                  for="Option1"
+                  label="First Name"
+                  placeholder="Muhammad"
+                  type="text"
+                  name="Firstname"
                 />
                 <Input
-                  label="Subject Two"
-                  type="radio"
-                  name="subject"
-                  value="Option"
-                  for="Option2"
+                  label="Last Name"
+                  placeholder="Arab"
+                  type="text"
+                  name="Lastname"
                 />
                 <Input
-                  label="Subject Three"
-                  type="radio"
-                  name="subject"
-                  value="Option"
-                  for="Option3"
+                  label="Email"
+                  placeholder="hello@example.com"
+                  type="email"
+                  name="Email"
                 />
                 <Input
-                  label="Subject Four"
-                  type="radio"
-                  name="subject"
-                  value="Option"
-                  for="Option4"
+                  label="Phone"
+                  placeholder="+91 98765 43210"
+                  type="number"
+                  name="Phone"
                 />
               </div>
-            </div>
-            <Textarea
-              label="Message"
-              placeholder="Type your message here..."
-              rows="4"
-            />
-            <div>
-              <Button>Send Message</Button>
-            </div>
+              <div>
+                <Label>Subject</Label>
+                <div>
+                  <Input
+                    label="Product Enquiry"
+                    type="radio"
+                    name="Subject"
+                    value="Product Enquiry"
+                    for="ProductEnquiry"
+                  />
+                  <Input
+                    label="Business Enquiry"
+                    type="radio"
+                    name="Subject"
+                    value="Business Enquiry"
+                    for="BusinessEnquiry"
+                  />
+                  <Input
+                    label="Saying Hi"
+                    type="radio"
+                    name="Subject"
+                    value="Saying Hi"
+                    for="SayingHi"
+                  />
+                  <Input
+                    label="Other"
+                    type="radio"
+                    name="Subject"
+                    value="Other"
+                    for="Other"
+                  />
+                </div>
+              </div>
+              <Textarea
+                label="Message"
+                placeholder="Type your message here..."
+                rows="4"
+                name="Message"
+              />
+              <div>
+                <Button>Send Message</Button>
+              </div>
+            </form>
           </ContainerRight>
         </div>
       </Container>

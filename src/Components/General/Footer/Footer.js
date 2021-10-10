@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    document.querySelector(".subscribeUs__input").value = "";
+  };
+
   return (
     <footer>
       <div className="footer__container">
@@ -28,7 +34,7 @@ function Footer() {
           <h2 className="part__title">Reach Us</h2>
           <div>
             <h4>
-              <i className="fa fa-phone"></i> : +91-99999 99999
+              <i className="fa fa-phone"></i> : +91-86378 89046
             </h4>
           </div>
           <div>
@@ -45,7 +51,7 @@ function Footer() {
         <div className="footer__part part--three">
           <div className="subscribeUs">
             <h2 className="part__title">Subscribe Us</h2>
-            <form className="subscribeUs__form">
+            <form className="subscribeUs__form" onSubmit={handleSubmit}>
               <input
                 className="subscribeUs__input"
                 type="email"
@@ -63,16 +69,26 @@ function Footer() {
           <div class="socialLinks">
             <h2 className="part__title">Social Media</h2>
             <div className="socialLink__container">
-              <a className="socialLink" href="/">
+              <a className="socialLink" href="/" hidden>
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a className="socialLink" href="/">
+              <a className="socialLink" href="/" hidden>
                 <i class="fab fa-twitter"></i>
               </a>
-              <a className="socialLink" href="/">
+              <a
+                className="socialLink"
+                href="https://www.instagram.com/neyx.in/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i class="fab fa-instagram"></i>
               </a>
-              <a className="socialLink" href="/">
+              <a
+                className="socialLink"
+                href="https://www.linkedin.com/company/neyx/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>

@@ -6,50 +6,49 @@ function Reviews() {
   return (
     <div className="reviews">
       <div className="reviews__image">
-        <h1>Come on, let me show a clip of the future in the next Side</h1>
+        <h1>See, what our partners are saying about us already</h1>
         <h2>Throughout the Country</h2>
       </div>
       <div className="reviews__cards">
         <div className="reviews__card">
           <div className="review_title">
             <CheckCircleOutlinedIcon />
-            <h2>Organized and Efficient</h2>
+            <h2>Winner of the online shopping game</h2>
           </div>
           <p>
-            “I'm a testimonial. Click to edit me and add text that says
-            something nice about you and your services.״{" "}
+            “Bargaining in online shopping! This is the best thing i heard.״
           </p>
           <div className="card__footer">
-            <h3>Jen B.</h3>
-            <p>Milestone</p>
+            <h3>Aditya Sinha</h3>
+            {/* <p>Milestone</p> */}
           </div>
         </div>
         <div className="reviews__card">
           <div className="review_title">
             <CheckCircleOutlinedIcon />
-            <h2>Organized and Efficient</h2>
+            <h2>New, exciting and awesome</h2>
           </div>
           <p>
-            “I'm a testimonial. Click to edit me and add text that says
-            something nice about you and your services.״{" "}
+            “My customers are very excited to know that they can bargain in
+            online platform now!״
           </p>
           <div className="card__footer">
-            <h3>Jen B.</h3>
-            <p>Milestone</p>
+            <h3>Muhammad Arab</h3>
+            {/* <p>Milestone</p> */}
           </div>
         </div>
         <div className="reviews__card">
           <div className="review_title">
             <CheckCircleOutlinedIcon />
-            <h2>Organized and Efficient</h2>
+            <h2>Customer oriented, professional and fun</h2>
           </div>
           <p>
-            “I'm a testimonial. Click to edit me and add text that says
-            something nice about you and your services.״{" "}
+            “I am sure this is going to be huge. This is ninja technique for
+            getting new and happy customers.״{" "}
           </p>
           <div className="card__footer">
-            <h3>Jen B.</h3>
-            <p>Milestone</p>
+            <h3>Meenakshi Roy</h3>
+            {/* <p>Milestone</p> */}
           </div>
         </div>
       </div>

@@ -7,10 +7,12 @@ function InputCompo(props) {
       <Label>{props.label}</Label>
       <Input
         type={props.type}
+        placeholder={props.placeholder}
         id={props.name}
         name={props.name}
         value={props.value}
         autoComplete="off"
+        required
       />
     </div>
   );
